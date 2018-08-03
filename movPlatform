@@ -1,0 +1,23 @@
+extends Area2D
+
+var velocidad = Vector2(1,0)
+var tiempo = 80
+var a = true
+var timer = 0
+
+
+func _ready():
+	set_process(true)
+	pass
+	
+func _process(delta):
+	if a:
+		position += velocidad
+		timer += 1
+		if timer == tiempo:
+			a = false
+	else:
+		position -= velocidad
+		timer -= 1
+		if timer == 0:
+			a = true
