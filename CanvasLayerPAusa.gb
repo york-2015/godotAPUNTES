@@ -1,0 +1,17 @@
+extends 
+#COMANDO MAIN_NODE
+func _ready():
+#	$Label.visible = false
+	set_process_input(true)
+func _input(event):
+	if Input.is_action_just_pressed("pausa_mia"):
+		if !get_tree().is_paused():
+			get_tree().set_pause(true)
+			$Label.visible = true
+			
+			#get_tree().change_scene("res://ESENApausa.tscn")
+			pass
+		elif get_tree().is_paused() == true:
+			get_tree().set_pause(false)
+			$Label.visible = false
+			pass
