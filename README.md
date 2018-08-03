@@ -1,3 +1,5 @@
 # godotAPUNTES
 apuntes de godot
-![Alt text](xgit.jpg?raw=true "game")
+
+
+![](https://raw.githubusercontent.com/york-2015/godotAPUNTES/master/xgit.png?raw=true "game")
